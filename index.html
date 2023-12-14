@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <title>Web!</title>
+</head>
+
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=Barlow:ital,wght@0,100;1,100&family=Roboto+Condensed:ital@1&display=swap');
+</style>
+
+<style>
+  body{
+    background-image: url('https://i.gifer.com/origin/5d/5d52081cf463de10c09513559c305913_w200.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Barlow', sans-serif;
+font-family: 'Barlow Condensed', sans-serif;
+    min-height: 100vh;
+}
+
+
+
+h1{
+  color: black;
+  text-align: center;
+  text-shadow: 0 0 3px #FF0000;
+}
+
+.DemonicHUBV2{
+  color: transparent;
+  background-image: linear-gradient(to right, yellow, DarkRed);
+  font-size: 45px;
+  font-family: 'Barlow', sans-serif, 'Barlow Condensed', sans-serif, 'Roboto', sans-serif, 'Roboto Condensed', sans-serif;
+  letter-spacing: 0.7px;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.DemonicHUBV2::first-letter{
+  font-size: 70px;
+}
+
+hr{
+  border-color: Black;
+}
+
+p{
+  color: #210101;
+  text-shadow: 0.22px 0.23px 0.27px #210101;
+}
+
+p.Rou{
+  border: 3px solid darkred;
+  border-radius: 5px;
+  padding: 15px;
+  font-size: 24px;
+  white-space: pre-line;
+}
+
+p.Rou span:first-child{
+  display: inline-block;
+  color: black;
+  text-shadow: 0 0 3px #FF0000;
+}
+
+button{
+      background: #290707;
+      color: #420404;
+      border: 0.4px solid #420404;
+      padding: 9px;
+      border-radius: 5px;
+      transition: border 0.3s;
+}
+
+.Box{
+  height: 220px;
+  width: 240px;
+  background: #100f17;
+  padding: 10px;
+  border: 2px solid #210104;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px #210104;
+  text-align: center;
+  overflow: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Icons-Cont{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  gap: 10px;
+}
+
+
+p.InfoRou{
+  background: transparent;
+  border: 3px solid darkred;
+  border-radius: 5px;
+  padding: 15px;
+  font-size: 24px;
+  white-space: pre-line;
+}
+
+    #Current{
+      border: 1px solid red;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 10px;
+    }
+
+   #Mgx{
+      height: 279px;
+      width: 350px;
+      background: #100f17;
+      border: 3px solid Black;
+      border-radius: 20px;
+      margin: 10px 5px;
+      object-fit: cover;
+      overflow: auto;
+      box-shadow: 0 0 10px Black;
+      transition: transform 0.5s, border 0.3s, box-shadow 0.3s;
+    }
+    
+    #Mgx img{
+      width: 100%;
+      height: 200px;
+      display: block;
+    }
+
+    #Mgx h1{
+      color: DarkRed;
+      text-align: center;
+      text-shadow: 1px 1px 1px Black;
+      text-decoration: none;
+    }
+
+    #Mgx p{
+      color: GhostWhite;
+      opacity: 0.1;
+      text-shadow: 1.1px 1.1px 2.1px #9c9a9a;
+      text-align: left;
+    }
+
+    #Mgx:hover{
+      border: 2px solid Orange;
+      box-shadow: 0 0 13px darkorange;
+      transform: rotateY(3deg) translateY(-2px);
+    }
+
+    #Mgx h1:hover{
+      text-decoration: underline;
+    }
+    
+    .Infos{
+  height: 200px;
+  width: 300px;
+  background: #100f17;
+  border: 1.2px solid Black;
+  border-radius: 5px;
+  box-shadow: 0 0 10px Black;
+  display: inline-block;
+  overflow: auto;
+  justify-content: space-between;
+}
+
+   .Infos h1{
+     font-size: 30px;
+   }
+   
+#Mained{
+      position: relative;
+      display: inline-block;
+    }
+    
+    #Sim{
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: #100f17;
+      border: 2px dashed ;
+      border-radius: 10px;
+      padding: 8px 12px;
+      font-size: 16px;
+      font-weight: bold;
+      color: White;
+      text-shadow: 1px 1px 2px #570909;
+    }
+    
+        #Tower{
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: #100f17;
+      border: 2px dashed ;
+      border-radius: 10px;
+      padding: 8px 12px;
+      font-size: 16px;
+      font-weight: bold;
+      color: White;
+      text-shadow: 1px 1px 2px Green;
+    }
+    
+        #Paint{
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: #100f17;
+      border: 2px dashed ;
+      border-radius: 10px;
+      padding: 8px 12px;
+      font-size: 16px;
+      font-weight: bold;
+      color: White;
+      text-shadow: 1px 1px 2px purple;
+    }
+    
+        #Escape{
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: #100f17;
+      border: 2px dashed ;
+      border-radius: 10px;
+      padding: 8px 12px;
+      font-size: 16px;
+      font-weight: bold;
+      color: White;
+      text-shadow: 1px 1px 2px orange;
+    }
+    
+        #Obby{
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: #100f17;
+      border: 2px dashed ;
+      border-radius: 10px;
+      padding: 8px 12px;
+      font-size: 16px;
+      font-weight: bold;
+      color: White;
+      text-shadow: 1px 1px 2px Blue;
+    }
+    
+        #Ball{
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: #100f17;
+      border: 2px dashed ;
+      border-radius: 10px;
+      padding: 8px 12px;
+      font-size: 16px;
+      font-weight: bold;
+      color: White;
+      text-shadow: 1px 1px 2px gold;
+    }
+    
+        #Morph{
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: #100f17;
+      border: 2px dashed ;
+      border-radius: 10px;
+      padding: 8px 12px;
+      font-size: 16px;
+      font-weight: bold;
+      color: White;
+      text-shadow: 1px 1px 2px Pink;
+    }
+    
+        #Dungeon{
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: #100f17;
+      border: 2px dashed ;
+      border-radius: 10px;
+      padding: 8px 12px;
+      font-size: 16px;
+      font-weight: bold;
+      color: White;
+      text-shadow: 1px 1px 2px #0a94f1;
+    }
+    
+        #Tycoon{
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: #100f17;
+      border: 2px dashed ;
+      border-radius: 10px;
+      padding: 8px 12px;
+      font-size: 16px;
+      font-weight: bold;
+      color: White;
+      text-shadow: 1px 1px 2px #b90e80;
+    }
+    
+        #Battleground{
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: #100f17;
+      border: 2px dashed ;
+      border-radius: 10px;
+      padding: 8px 12px;
+      font-size: 16px;
+      font-weight: bold;
+      color: White;
+      text-shadow: 1px 1px 2px #b98d0e;
+    }
+    
+     .Vertise{
+      height: 39px;
+      width: 100px;
+      background: #421903;
+      color: #4a1d04;
+      border: 0.8px solid #c44b0a;
+      border-radius: 5px;
+      transition: opacity 0.3s;
+      justify-items: center;
+      align-items: center;
+      display: none;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      opacity: 0;
+    }
+    
+    .Work{
+      height: 39px;
+      width: 100px;
+      background: #022410;
+      color: #023317;
+      border: 0.8px solid #07ba5e;
+      border-radius: 3px;
+      transition: border 0.3s;
+      justify-items: center;
+      align-items: center;
+      display: none;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      opacity: 0;
+    }
+    
+      .Cuty{
+      height: 39px;
+      width: 100px;
+      background: #080329;
+      color: #0b0242;
+      border: 0.8px solid #0b0245;
+      border-radius: 5px;
+      text-shadow: 0.4px 0.22px 0.29px Black;
+      justify-items: center;
+      align-items: center;
+      display: none;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      opacity: 0;
+    }
+
+</style>
+
+<body>
+  
+  <br>
+  
+  <h1 class="DemonicHUBV2">Demonic HUB V2</h1>
+  <br>
+  
+  
+  <h1>GAME-SCRIPTS WE CURRENTLY OFFER: </h1>
+        <div id="Current">
+    <div id="Mgx">
+    <div id="Mained">
+    <div id="Paint">PAINT</div>
+      <img src="https://tr.rbxcdn.com/ca29b87fcb27a398fd0631e47b5a91c8/768/432/Image/Png">
+      <h1>Starving Artist</h1>
+      <p>DemonicHub V2.</p>
+      </div>
+    </div>
+    
+        <div id="Mgx">
+        <div id="Mained">
+        <div id="Escape">ESCAPE</div>
+      <img src="https://tr.rbxcdn.com/386c27db7cdb43f4f6a91a81e4a19b13/768/432/Image/Png">
+      <h1>Cheese Escape</h1>
+      <p>DemonicHub V2.</p>
+      </div>
+    </div>
+    
+ <div id="Mgx">
+        <div id="Mained">
+        <div id="Sim">SIMULATOR</div>
+      <img src="https://tr.rbxcdn.com/1207b121ebde02c41988ace6e97bf18b/768/432/Image/Png">
+      <h1>Punch Simulator</h1>
+      <p>DemonicHub V2.</p>
+    </div>
+</div>
+    
+      <div id="Mgx">
+      <div id="Mained">
+      <div id="Obby">OBBY</div>
+      <img src="https://tr.rbxcdn.com/a23812a09470dffef86c6500708bb4eb/768/432/Image/Png">
+      <h1>5Diamondzz Obby</h1>
+      <p>DemonicHub V2.</p>
+      </div>
+    </div>
+    
+ <div id="Mgx">
+        <div id="Mained">
+        <div id="Sim">SIMULATOR</div>
+      <img src="https://tr.rbxcdn.com/6de4d7ea121663b27fb88a739b472937/500/280/Image/Jpeg">
+      <h1>Ninja Fighting Simulator</h1>
+      <p>DemonicHub V2.</p>
+    </div>
+</div>
+    
+      <div id="Mgx">
+      <div id="Mained">
+      <div id="Tower">TOWER DEFENSE</div>
+      <img src="https://tr.rbxcdn.com/69a6c557a1ce8ede8a429f8a2bc1d31b/768/432/Image/Png">
+      <h1>Anime World Tower Defense</h1>
+      <p>DemonicHub V2.</p>
+      </div>
+    </div>
+    
+       <div id="Mgx">
+        <div id="Mained">
+        <div id="Sim">SIMULATOR</div>
+      <img src="https://tr.rbxcdn.com/5dd0e902de6a72997701a74126e6fff9/500/280/Image/Jpeg">
+      <h1>+1 Fat Per Second</h1>
+      <p>DemonicHub V2.</p>
+    </div>
+</div>
+
+ <div id="Mgx">
+        <div id="Mained">
+        <div id="Sim">SIMULATOR</div>
+      <img src="https://www.mrguider.org/wp-content/uploads/2023/09/Strong-Muscle-Simulator-X-Codes-Wiki-Roblox.jpg">
+      <h1>Strong Muscle Simulator</h1>
+      <p>DemonicHub V2.</p>
+    </div>
+</div>
+    
+ <div id="Mgx">
+        <div id="Mained">
+        <div id="Sim">SIMULATOR</div>
+      <img src="https://tr.rbxcdn.com/1643924138f2d9d4abff0ecf89be6695/768/432/Image/Png">
+      <h1>+1 Jump Per Second</h1>
+      <p>DemonicHub V2.</p>
+    </div>
+</div>
+    
+      <div id="Mgx">
+      <div id="Mained">
+      <div id="Ball">BALL</div>
+      <img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2023/11/roblox-blade-ball-codes.jpg">
+      <h1>Blade Ball</h1>
+      <p>DemonicHub V2.</p>
+    </div>
+    </div>
+    
+ <div id="Mgx">
+        <div id="Mained">
+        <div id="Sim">SIMULATOR</div>
+      <img src="https://consejosjuegospro.org/wp-content/uploads/2023/08/Codigos-de-Roblox-Deadlift-Simulator-agosto-de-2023-ganancias-y.jpg">
+      <h1>Deadlift Simulator</h1>
+      <p>DemonicHub V2.</p>
+    </div>
+</div>
+    
+      <div id="Mgx">
+      <div id="Mained">
+      <div id="Morph">MORPH</div>
+      <img src="https://tr.rbxcdn.com/8d9ceb2d48a481d7ff891601a6c72bf8/500/280/Image/Jpeg">
+      <h1>RainbowFriends Morphs</h1>
+      <p>DemonicHub V2.</p>
+    </div>
+    </div>
+    
+      <div id="Mgx">
+      <div id="Mained">
+      <div id="Tower">TOWER DEFENSE</div>
+      <img src="https://tr.rbxcdn.com/4f680b145b89015005b28ddf2864ec32/768/432/Image/Png">
+      <h1>Tower Defense Simulator</h1>
+      <p>DemonicHub V2.</p>
+      </div>
+    </div>
+    
+              <div id="Mgx">
+        <div id="Mained">
+        <div id="Sim">SIMULATOR</div>
+      <img src="https://tryhardguides.com/wp-content/uploads/2023/09/roblox-fat-race-codes.jpg">
+      <h1>Fat Race</h1>
+      <p>DemonicHub V2.</p>
+    </div>
+</div>
+    
+      <div id="Mgx">
+      <div id="Mained">
+      <div id="Dungeon">DUNGEON</div>
+      <img src="https://tr.rbxcdn.com/6dca4763d107241e64c898f2fc0cee08/768/432/Image/Png">
+      <h1>Elemental Dungeons</h1>
+      <p>DemonicHub V2.</p>
+    </div>
+    </div>
+    
+                    <div id="Mgx">
+        <div id="Mained">
+        <div id="Sim">SIMULATOR</div>
+      <img src="https://tr.rbxcdn.com/7745f27536e384dce7b3fe0f1defd263/768/432/Image/Png">
+      <h1>Muscle Legends</h1>
+      <p>DemonicHub V2.</p>
+    </div>
+</div>
+    
+              <div id="Mgx">
+        <div id="Mained">
+        <div id="Sim">SIMULATOR</div>
+      <img src="https://prod.assets.earlygamecdn.com/images/Gladiator-Simulator-Cover.jpg?transform=banner_webp">
+      <h1>Gladiator Simulator</h1>
+      <p>DemonicHub V2.</p>
+    </div>
+</div>
+    
+        <div id="Mgx">
+        <div id="Mained">
+        <div id="Sim">SIMULATOR</div>
+      <img src="https://tr.rbxcdn.com/3b7d62fa1d5549bb8d4880b35630c38c/500/280/Image/Jpeg">
+      <h1>Swim Race Simulator</h1>
+      <p>DemonicHub V2.</p>
+    </div>
+</div>
+    
+      <div id="Mgx">
+      <div id="Mained">
+      <div id="Sim">SIMULATOR</div>
+      <img src="https://tr.rbxcdn.com/7c0f75a776ea99c71966b4608b3d6fcb/768/432/Image/Png">
+      <h1>Race Clicker</h1>
+      <p>DemonicHub V2.</p>
+      </div>
+    </div>
+    
+              <div id="Mgx">
+        <div id="Mained">
+        <div id="Sim">SIMULATOR</div>
+      <img src="https://tr.rbxcdn.com/5a06313ef0e840d2385c5300f2fa51ff/500/280/Image/Jpeg">
+      <h1>Muscle Simulator</h1>
+      <p>DemonicHub V2.</p>
+    </div>
+</div>
+    
+              <div id="Mgx">
+        <div id="Mained">
+        <div id="Sim">SIMULATOR</div>
+      <img src="https://tr.rbxcdn.com/4f18f278ddb75768394ad37553e8c98f/768/432/Image/Png">
+      <h1>Toilet Battle Simulator</h1>
+      <p>DemonicHub V2.</p>
+    </div>
+</div>
+    
+              <div id="Mgx">
+        <div id="Mained">
+        <div id="Sim">SIMULATOR</div>
+      <img src="https://tr.rbxcdn.com/5c15dcf1649c102228d5907c1075107c/500/280/Image/Jpeg">
+      <h1>Squad Simulator</h1>
+      <p>DemonicHub V2.</p>
+    </div>
+</div>
+    
+      <div id="Mgx">
+      <div id="Mained">
+      <div id="Ball">BALL</div>
+      <img src="https://tr.rbxcdn.com/064588f04e7edd60f66381772c66d9a2/500/280/Image/Jpeg">
+      <h1>Soccer Ball</h1>
+      <p>DemonicHub V2.</p>
+    </div>
+    </div>
+    
+ <div id="Mgx">
+        <div id="Mained">
+        <div id="Sim">SIMULATOR</div>
+      <img src="https://tr.rbxcdn.com/72c595a8057dbc0442c3c30142850f39/500/280/Image/Jpeg">
+      <h1>Afk For UGC</h1>
+      <p>DemonicHub V2.</p>
+    </div>
+</div>
+    
+                    <div id="Mgx">
+        <div id="Mained">
+        <div id="Sim">SIMULATOR</div>
+      <img src="https://tr.rbxcdn.com/b6c2dd77bbf0b4e2457e1dbd4d5b1dc9/768/432/Image/Png">
+      <h1>Muscle Legends</h1>
+      <p>DemonicHub V2.</p>
+    </div>
+</div>
+    
+      <div id="Mgx">
+      <div id="Mained">
+      <div id="Tycoon">TYCOON</div>
+      <img src="https://tr.rbxcdn.com/8e96698c96e93f1298c4b963c91b1aa3/500/280/Image/Jpeg">
+      <h1>Anime Power Tycoon</h1>
+      <p>DemonicHub V2.</p>
+    </div>
+    </div>
+    
+ <div id="Mgx">
+        <div id="Mained">
+        <div id="Sim">SIMULATOR</div>
+      <img src="https://tr.rbxcdn.com/a90e7b8e0e85cb69047392a0ebb5d194/768/432/Image/Png">
+      <h1>Get Richest Every Click</h1>
+      <p>DemonicHub V2.</p>
+    </div>
+</div>
+    
+                <div id="Mgx">
+                <div id="Mained">
+                <div id="Battleground">BATTLEGROUND</div>
+      <img src="https://tr.rbxcdn.com/f0116e385c23ea3e7ece2d9546159082/768/432/Image/Png">
+      <h1>Lucky Blocks Battlegrounds</h1>
+      <p>DemonicHub V2.</p>
+    </div>
+    </div>
+    
+          <div id="Mgx">
+      <div id="Mained">
+      <div id="Tower">TOWER DEFENSE</div>
+      <img src="https://tr.rbxcdn.com/b49979c520b93f439756b68b110a0b4c/768/432/Image/Png">
+      <h1>All Star Tower Defense</h1>
+      <p>DemonicHub V2.</p>
+      </div>
+    </div>
+    
+     <div id="Mgx">
+        <div id="Mained">
+        <div id="Sim">SIMULATOR</div>
+      <img src="https://tr.rbxcdn.com/b41ec8298f1801803ea2d0910a4c092c/500/280/Image/Jpeg">
+      <h1>Pull A Sword</h1>
+      <p>DemonicHub V2.</p>
+    </div>
+</div>
+    
+  </div>
+
+
+<br>
+<br>
+<br>
+
+<hr>
+
+<br>
+
+<h1>GET SCRIPT</h1>
+
+<br>
+
+<div class="Box">
+  <button type="button" onclick="S()">GET SCRIPT | SHOW METHOD</button>
+  <p>Click Button For Show Method Script Get</p>
+  <button class="Vertise" onclick="Linkvertise()">Linkvertise</button>
+  <button class="Work" onclick="WorkInk()">Work.ink</button>
+  <button class="Cuty" onclick="Cuty()">Cuty.io</button>
+</div>
+
+
+<br>
+<br>
+<br>
+
+<h1>INFO</h1>
+
+
+<div class="Infos">
+  <h1>Developers:</h1>
+  <br>
+  <p>alan11ago#8475</p>
+</div>
+
+<div class="Infos">
+  <h1>Partners:</h1>
+  <br>
+  <p>Flaming Dragons HUB</p>
+</div>
+
+<div class="Infos">
+  <h1>Info:</h1>
+  <br>
+  <p>Since:
+  2023-????</p>
+</div>
+
+
+<br>
+<br>
+<br>
+
+
+<h1>SOCIALS</h1>
+
+<br>
+
+
+<div class="Icons-Cont">
+
+
+<svg width="29px" height="31px" viewBox="0 0 512 512" fill="#000000" aria-label="Discord" role="img" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <rect width="512" height="512" rx="15%" fill="#ffffff"></rect> <path d="m386 137c-24-11-49.5-19-76.3-23.7c-.5 0-1 0-1.2.6c-3.3 5.9-7 13.5-9.5 19.5c-29-4.3-57.5-4.3-85.7 0c-2.6-6.2-6.3-13.7-10-19.5c-.3-.4-.7-.7-1.2-.6c-23 4.6-52.4 13-76 23.7c-.2 0-.4.2-.5.4c-49 73-62 143-55 213c0 .3.2.7.5 1c32 23.6 63 38 93.6 47.3c.5 0 1 0 1.3-.4c7.2-9.8 13.6-20.2 19.2-31.2c.3-.6 0-1.4-.7-1.6c-10-4-20-8.6-29.3-14c-.7-.4-.8-1.5 0-2c2-1.5 4-3 5.8-4.5c.3-.3.8-.3 1.2-.2c61.4 28 128 28 188 0c.4-.2.9-.1 1.2.1c1.9 1.6 3.8 3.1 5.8 4.6c.7.5.6 1.6 0 2c-9.3 5.5-19 10-29.3 14c-.7.3-1 1-.6 1.7c5.6 11 12.1 21.3 19 31c.3.4.8.6 1.3.4c30.6-9.5 61.7-23.8 93.8-47.3c.3-.2.5-.5.5-1c7.8-80.9-13.1-151-55.4-213c0-.2-.3-.4-.5-.4Zm-192 171c-19 0-34-17-34-38c0-21 15-38 34-38c19 0 34 17 34 38c0 21-15 38-34 38zm125 0c-19 0-34-17-34-38c0-21 15-38 34-38c19 0 34 17 34 38c0 21-15 38-34 38z" fill="#5865f2" onclick="DISCORD()"></path> </g></svg>
+  
+  
+  
+<svg height="31px" width="31px" version="1.1" id="_x34_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path style="fill:#AD302E;" d="M497.949,374.11c-80.764,7.083-161.788,10.624-242.726,10.624c-8.984,0-18.054-0.086-27.037-0.172 c-11.229-0.086-22.459-0.346-33.602-0.519c-7.601-0.172-15.289-0.345-22.977-0.604c-19.954-0.605-39.907-1.469-59.861-2.505 c-6.133-0.345-12.353-0.691-18.485-1.036c-7.774-0.432-15.548-0.95-23.323-1.468c-12.698-0.864-25.396-1.814-38.093-2.851 c-5.96-0.432-11.834-0.95-17.794-1.468c-0.951-6.392-1.901-12.698-2.764-19.09C-4.606,240.395-3.743,125.078,14.052,10.626 C156.578-1.899,299.536-3.368,442.061,6.307c11.316,0.778,22.631,1.641,33.947,2.505c7.342,0.604,14.598,1.209,21.94,1.814 c1.209,7.861,2.332,15.635,3.369,23.496C516.607,147.278,515.484,261.126,497.949,374.11z"></path> </g> <g> <path style="fill:#FFFFFF;" d="M341.126,192.368c-0.056,0.107-0.113,0.215-0.169,0.322 c-28.533,54.742-92.342,92.073-158.407,92.073c0-51.07,0-133.721,0-184.791c66.066,0,129.875,37.332,158.407,92.073 C341.014,192.153,341.07,192.261,341.126,192.368z"></path> <path style="fill:#E3E2E2;" d="M341.126,192.368c-0.056-0.107-0.113-0.215-0.169-0.322 c-28.533-54.742-92.342-92.073-158.407-92.073c0,7.145,0,14.956,0,23.165c61.299,1.529,119.954,34.866,149.574,84.139 c3.194-4.723,6.21-9.553,8.833-14.585C341.014,192.583,341.07,192.476,341.126,192.368z"></path> </g> <path style="opacity:0.08;fill:#040000;" d="M497.949,374.11c-80.764,7.083-161.788,10.624-242.726,10.624 c-8.984,0-18.054-0.086-27.037-0.172c-11.229-0.086-22.459-0.346-33.602-0.519c-7.601-0.172-15.289-0.345-22.977-0.604 c-19.954-0.605-39.907-1.469-59.861-2.505c-6.133-0.345-12.353-0.691-18.485-1.036c-7.774-0.432-15.548-0.95-23.323-1.468 L442.061,6.307c11.316,0.778,22.631,1.641,33.947,2.505c7.342,0.604,14.598,1.209,21.94,1.814 c1.209,7.861,2.332,15.635,3.369,23.496C516.607,147.278,515.484,261.126,497.949,374.11z" onclick="YT()"></path> </g> </g></svg>
+
+
+  <svg width="31px" height="31px" viewBox="-23 0 302 302" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M217.168476,23.5070146 C203.234077,7.62479651 178.045612,0.815753338 145.823355,0.815753338 L52.3030619,0.815753338 C45.7104431,0.815753338 40.1083819,5.6103852 39.0762042,12.1114399 L0.136468302,259.076601 C-0.637664968,263.946149 3.13311322,268.357876 8.06925331,268.357876 L65.804612,268.357876 L80.3050438,176.385849 L79.8555471,179.265958 C80.8877248,172.764903 86.4481659,167.970272 93.0324607,167.970272 L120.46841,167.970272 C174.366398,167.970272 216.569147,146.078116 228.897012,82.7490197 C229.263268,80.8761167 229.579581,79.0531577 229.854273,77.2718188 C228.297683,76.4477414 228.297683,76.4477414 229.854273,77.2718188 C233.525163,53.8646924 229.829301,37.9325302 217.168476,23.5070146" fill="#27346A"> </path> <path d="M102.396976,68.8395929 C103.936919,68.1070797 105.651665,67.699203 107.449652,67.699203 L180.767565,67.699203 C189.449511,67.699203 197.548776,68.265236 204.948824,69.4555699 C207.071448,69.7968545 209.127479,70.1880831 211.125242,70.6375799 C213.123006,71.0787526 215.062501,71.5781934 216.943728,72.1275783 C217.884341,72.4022708 218.808307,72.6852872 219.715624,72.9849517 C223.353218,74.2002577 226.741092,75.61534 229.854273,77.2718188 C233.525163,53.8563683 229.829301,37.9325302 217.168476,23.5070146 C203.225753,7.62479651 178.045612,0.815753338 145.823355,0.815753338 L52.2947379,0.815753338 C45.7104431,0.815753338 40.1083819,5.6103852 39.0762042,12.1114399 L0.136468302,259.068277 C-0.637664968,263.946149 3.13311322,268.349552 8.0609293,268.349552 L65.804612,268.349552 L95.8875974,77.5798073 C96.5035744,73.6675208 99.0174265,70.4627756 102.396976,68.8395929 Z" fill="#27346A"> </path> <path d="M228.897012,82.7490197 C216.569147,146.069792 174.366398,167.970272 120.46841,167.970272 L93.0241367,167.970272 C86.4398419,167.970272 80.8794007,172.764903 79.8555471,179.265958 L61.8174095,293.621258 C61.1431644,297.883153 64.4394738,301.745495 68.7513129,301.745495 L117.421821,301.745495 C123.182038,301.745495 128.084882,297.550192 128.983876,291.864891 L129.458344,289.384335 L138.631407,231.249423 L139.222412,228.036354 C140.121406,222.351053 145.02425,218.15575 150.784467,218.15575 L158.067979,218.15575 C205.215193,218.15575 242.132193,199.002194 252.920115,143.605884 C257.423406,120.456802 255.092683,101.128442 243.181019,87.5519756 C239.568397,83.4399129 235.081754,80.0437153 229.854273,77.2718188 C229.571257,79.0614817 229.263268,80.8761167 228.897012,82.7490197 L228.897012,82.7490197 Z" fill="#2790C3"> </path> <path d="M216.952052,72.1275783 C215.070825,71.5781934 213.13133,71.0787526 211.133566,70.6375799 C209.135803,70.1964071 207.071448,69.8051785 204.957148,69.4638939 C197.548776,68.265236 189.457835,67.699203 180.767565,67.699203 L107.457976,67.699203 C105.651665,67.699203 103.936919,68.1070797 102.4053,68.8479169 C99.0174265,70.4710996 96.5118984,73.6675208 95.8959214,77.5881313 L80.3133678,176.385849 L79.8638711,179.265958 C80.8877248,172.764903 86.4481659,167.970272 93.0324607,167.970272 L120.476734,167.970272 C174.374722,167.970272 216.577471,146.078116 228.905336,82.7490197 C229.271592,80.8761167 229.579581,79.0614817 229.862597,77.2718188 C226.741092,75.623664 223.361542,74.2002577 219.723948,72.9932757 C218.816631,72.6936112 217.892665,72.4022708 216.952052,72.1275783" fill="#1F264F" onclick="PAYPAL()"> </path> </g> </g></svg>
+</div>
+
+
+<script>
+
+function Cuty(){
+  window.location.href="https://linkgenie.me/s/VxWAd";
+}
+
+function WorkInk(){
+  window.location.href="https://linkgenie.me/s/X56LG";
+}
+
+function Linkvertise(){
+  window.location.href="https://linkgenie.me/s/cYU44";
+}
+
+function DISCORD(){
+  window.location.href="https://discord.gg/Qr6Ah9SAaw";
+}
+
+function YT(){
+  window.location.href="https://youtube.com/@Roblox12463cs?si=6UnaAhXCZdM70cSg";
+}
+
+function PAYPAL(){
+  window.location.href="https://Paypal.me/Www192922";
+}
+
+function S(){
+  var o = document.querySelectorAll(".Vertise, .Work, .Cuty");
+  
+  o.forEach(function(W){
+    if(W.style.display === "none"){
+      W.style.display = "block";
+      setTimeout(function(){
+         W.style.opacity = "1";
+      }, 50);
+    } else{
+      W.style.display = "none";
+      setTimeout(function(){
+         W.style.opacity = "0";
+      }, 150);
+    }
+  });
+}
+
+</script>
+
+<script data-cfasync="false" src="//d2o8i1jpfoso49.cloudfront.net/?pjiod=1011695"></script>
+
+<script data-cfasync="false" src="/sw.js"></script>
+
+</body>
+
+</html>
