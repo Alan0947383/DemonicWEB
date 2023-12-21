@@ -406,6 +406,25 @@ p.InfoRou{
       opacity: 0;
   }
 
+  .Jambo{
+      height: 39px;
+      width: 100px;
+      background: #1f0202;
+      color: #4a0404;
+      border: 0.8px solid #360303;
+      border-radius: 5px;
+      text-shadow: 0.4px 0.22px 0.29px Black;
+      justify-items: center;
+      align-items: center;
+      display: none;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      opacity: 0;
+  }
+
+
 </style>
 
 <body>
@@ -719,6 +738,7 @@ p.InfoRou{
   <button class="Work" onclick="WorkInk()">Work.ink</button>
   <button class="Cuty" onclick="Cuty()">Cuty.io</button>
   <button class="FC" onclick="FC()">Fc.Lc</button>
+  <button class="Jambo" onclick="Jambo()">Jambo</button>
 </div>
 
 
@@ -791,6 +811,10 @@ function FC(){
   window.location.href="https://linkgenie.me/s/ohUfm";
 }
 
+function Jambo(){
+  window.location.href="https://linkgenie.me/s/072qL";
+}
+
 function DISCORD(){
   window.location.href="https://discord.gg/Qr6Ah9SAaw";
 }
@@ -804,7 +828,7 @@ function PAYPAL(){
 }
 
 function S(){
-  var o = document.querySelectorAll(".Vertise, .Work, .Cuty, .FC");
+  var o = document.querySelectorAll(".Vertise, .Work, .Cuty, .FC, .Jambo");
   
   o.forEach(function(W){
     if(W.style.display === "none"){
