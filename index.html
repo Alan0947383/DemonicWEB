@@ -386,7 +386,25 @@ p.InfoRou{
       margin-top: 10px;
       margin-bottom: 10px;
       opacity: 0;
-    }
+      }
+
+  .FC{
+      height: 39px;
+      width: 100px;
+      background: #0c0124;
+      color: #360b9c;
+      border: 0.8px solid #14043b;
+      border-radius: 5px;
+      text-shadow: 0.4px 0.22px 0.29px Black;
+      justify-items: center;
+      align-items: center;
+      display: none;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      opacity: 0;
+  }
 
 </style>
 
@@ -700,6 +718,7 @@ p.InfoRou{
   <button class="Vertise" onclick="Linkvertise()">Linkvertise</button>
   <button class="Work" onclick="WorkInk()">Work.ink</button>
   <button class="Cuty" onclick="Cuty()">Cuty.io</button>
+  <button class="FC" onclick="FC()">Fc.Lc</button>
 </div>
 
 
@@ -768,6 +787,10 @@ function Linkvertise(){
   window.location.href="https://linkgenie.me/s/cYU44";
 }
 
+function FC(){
+  window.location.href="https://linkgenie.me/s/ohUfm";
+}
+
 function DISCORD(){
   window.location.href="https://discord.gg/Qr6Ah9SAaw";
 }
@@ -781,7 +804,7 @@ function PAYPAL(){
 }
 
 function S(){
-  var o = document.querySelectorAll(".Vertise, .Work, .Cuty");
+  var o = document.querySelectorAll(".Vertise, .Work, .Cuty, .FC");
   
   o.forEach(function(W){
     if(W.style.display === "none"){
